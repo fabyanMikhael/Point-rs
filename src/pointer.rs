@@ -11,12 +11,13 @@ pub fn MutPointer<T>(value: &mut T) -> MutPointer<T>{
 
 
 
-
+#[derive(Clone, Copy)]
 pub struct Pointer<T>{
     value: usize,
     _marker: std::marker::PhantomData<T>
 }
 
+#[derive(Clone, Copy)]
 pub struct MutPointer<T>{
     value: usize,
     _marker: std::marker::PhantomData<T>
