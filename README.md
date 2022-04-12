@@ -3,6 +3,14 @@ A simple library with just one struct which is used to wrap around pointers. Thi
 
 ## usage
 
+### cargo.toml file
+```toml
+[dependencies]
+Pointrs = {git="https://github.com/fabyanMikhael/Point-rs.git"}
+```
+
+### examples
+
 ```rs
 let x = 0;
 let y = Pointer(&x);
